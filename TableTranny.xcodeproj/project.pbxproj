@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FABAA33A1AD366FA004B60BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABAA3391AD366FA004B60BC /* AppDelegate.swift */; };
-		FABAA33C1AD366FA004B60BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABAA33B1AD366FA004B60BC /* ViewController.swift */; };
-		FABAA33F1AD366FA004B60BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABAA33D1AD366FA004B60BC /* Main.storyboard */; };
 		FABAA3411AD366FA004B60BC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FABAA3401AD366FA004B60BC /* Images.xcassets */; };
 		FABAA3441AD366FA004B60BC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FABAA3421AD366FA004B60BC /* LaunchScreen.xib */; };
 		FABAA3501AD366FA004B60BC /* TableTrannyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABAA34F1AD366FA004B60BC /* TableTrannyTests.swift */; };
+		FABAA35F1AD368EA004B60BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABAA3591AD368EA004B60BC /* AppDelegate.swift */; };
+		FABAA3601AD368EA004B60BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABAA35A1AD368EA004B60BC /* ViewController.swift */; };
+		FABAA3611AD368EA004B60BC /* EarthTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABAA35B1AD368EA004B60BC /* EarthTableCell.swift */; };
+		FABAA3621AD368EA004B60BC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABAA35C1AD368EA004B60BC /* DetailViewController.swift */; };
+		FABAA3631AD368EA004B60BC /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABAA35D1AD368EA004B60BC /* TransitionManager.swift */; };
+		FABAA3641AD368EA004B60BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABAA35E1AD368EA004B60BC /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +31,17 @@
 /* Begin PBXFileReference section */
 		FABAA3341AD366FA004B60BC /* TableTranny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableTranny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABAA3381AD366FA004B60BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FABAA3391AD366FA004B60BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FABAA33B1AD366FA004B60BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FABAA33E1AD366FA004B60BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FABAA3401AD366FA004B60BC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FABAA3431AD366FA004B60BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FABAA3491AD366FA004B60BC /* TableTrannyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableTrannyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABAA34E1AD366FA004B60BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FABAA34F1AD366FA004B60BC /* TableTrannyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableTrannyTests.swift; sourceTree = "<group>"; };
+		FABAA3591AD368EA004B60BC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FABAA35A1AD368EA004B60BC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FABAA35B1AD368EA004B60BC /* EarthTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarthTableCell.swift; sourceTree = "<group>"; };
+		FABAA35C1AD368EA004B60BC /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FABAA35D1AD368EA004B60BC /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
+		FABAA35E1AD368EA004B60BC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +83,12 @@
 		FABAA3361AD366FA004B60BC /* TableTranny */ = {
 			isa = PBXGroup;
 			children = (
-				FABAA3391AD366FA004B60BC /* AppDelegate.swift */,
-				FABAA33B1AD366FA004B60BC /* ViewController.swift */,
-				FABAA33D1AD366FA004B60BC /* Main.storyboard */,
+				FABAA3591AD368EA004B60BC /* AppDelegate.swift */,
+				FABAA35A1AD368EA004B60BC /* ViewController.swift */,
+				FABAA35C1AD368EA004B60BC /* DetailViewController.swift */,
+				FABAA35B1AD368EA004B60BC /* EarthTableCell.swift */,
+				FABAA35D1AD368EA004B60BC /* TransitionManager.swift */,
+				FABAA35E1AD368EA004B60BC /* Main.storyboard */,
 				FABAA3401AD366FA004B60BC /* Images.xcassets */,
 				FABAA3421AD366FA004B60BC /* LaunchScreen.xib */,
 				FABAA3371AD366FA004B60BC /* Supporting Files */,
@@ -192,7 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FABAA33F1AD366FA004B60BC /* Main.storyboard in Resources */,
+				FABAA3641AD368EA004B60BC /* Main.storyboard in Resources */,
 				FABAA3441AD366FA004B60BC /* LaunchScreen.xib in Resources */,
 				FABAA3411AD366FA004B60BC /* Images.xcassets in Resources */,
 			);
@@ -212,8 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FABAA33C1AD366FA004B60BC /* ViewController.swift in Sources */,
-				FABAA33A1AD366FA004B60BC /* AppDelegate.swift in Sources */,
+				FABAA3601AD368EA004B60BC /* ViewController.swift in Sources */,
+				FABAA3631AD368EA004B60BC /* TransitionManager.swift in Sources */,
+				FABAA3611AD368EA004B60BC /* EarthTableCell.swift in Sources */,
+				FABAA35F1AD368EA004B60BC /* AppDelegate.swift in Sources */,
+				FABAA3621AD368EA004B60BC /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,14 +248,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FABAA33D1AD366FA004B60BC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FABAA33E1AD366FA004B60BC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FABAA3421AD366FA004B60BC /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -336,9 +340,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TableTranny/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -346,6 +352,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TableTranny/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -405,6 +412,7 @@
 				FABAA3551AD366FA004B60BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FABAA3561AD366FA004B60BC /* Build configuration list for PBXNativeTarget "TableTrannyTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +421,7 @@
 				FABAA3581AD366FA004B60BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
