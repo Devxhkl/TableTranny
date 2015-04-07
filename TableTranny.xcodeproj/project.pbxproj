@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FABAA33A1AD366FA004B60BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABAA3391AD366FA004B60BC /* AppDelegate.swift */; };
+		FABAA33C1AD366FA004B60BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABAA33B1AD366FA004B60BC /* ViewController.swift */; };
+		FABAA33F1AD366FA004B60BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABAA33D1AD366FA004B60BC /* Main.storyboard */; };
+		FABAA3411AD366FA004B60BC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FABAA3401AD366FA004B60BC /* Images.xcassets */; };
+		FABAA3441AD366FA004B60BC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FABAA3421AD366FA004B60BC /* LaunchScreen.xib */; };
+		FABAA3501AD366FA004B60BC /* TableTrannyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABAA34F1AD366FA004B60BC /* TableTrannyTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FABAA34A1AD366FA004B60BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FABAA32C1AD366FA004B60BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FABAA3331AD366FA004B60BC;
+			remoteInfo = TableTranny;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FABAA3341AD366FA004B60BC /* TableTranny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableTranny.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FABAA3381AD366FA004B60BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FABAA3391AD366FA004B60BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FABAA33B1AD366FA004B60BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FABAA33E1AD366FA004B60BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FABAA3401AD366FA004B60BC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FABAA3431AD366FA004B60BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FABAA3491AD366FA004B60BC /* TableTrannyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableTrannyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FABAA34E1AD366FA004B60BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FABAA34F1AD366FA004B60BC /* TableTrannyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableTrannyTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FABAA3311AD366FA004B60BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FABAA3461AD366FA004B60BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FABAA32B1AD366FA004B60BC = {
+			isa = PBXGroup;
+			children = (
+				FABAA3361AD366FA004B60BC /* TableTranny */,
+				FABAA34C1AD366FA004B60BC /* TableTrannyTests */,
+				FABAA3351AD366FA004B60BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FABAA3351AD366FA004B60BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FABAA3341AD366FA004B60BC /* TableTranny.app */,
+				FABAA3491AD366FA004B60BC /* TableTrannyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FABAA3361AD366FA004B60BC /* TableTranny */ = {
+			isa = PBXGroup;
+			children = (
+				FABAA3391AD366FA004B60BC /* AppDelegate.swift */,
+				FABAA33B1AD366FA004B60BC /* ViewController.swift */,
+				FABAA33D1AD366FA004B60BC /* Main.storyboard */,
+				FABAA3401AD366FA004B60BC /* Images.xcassets */,
+				FABAA3421AD366FA004B60BC /* LaunchScreen.xib */,
+				FABAA3371AD366FA004B60BC /* Supporting Files */,
+			);
+			path = TableTranny;
+			sourceTree = "<group>";
+		};
+		FABAA3371AD366FA004B60BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FABAA3381AD366FA004B60BC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FABAA34C1AD366FA004B60BC /* TableTrannyTests */ = {
+			isa = PBXGroup;
+			children = (
+				FABAA34F1AD366FA004B60BC /* TableTrannyTests.swift */,
+				FABAA34D1AD366FA004B60BC /* Supporting Files */,
+			);
+			path = TableTrannyTests;
+			sourceTree = "<group>";
+		};
+		FABAA34D1AD366FA004B60BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FABAA34E1AD366FA004B60BC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FABAA3331AD366FA004B60BC /* TableTranny */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FABAA3531AD366FA004B60BC /* Build configuration list for PBXNativeTarget "TableTranny" */;
+			buildPhases = (
+				FABAA3301AD366FA004B60BC /* Sources */,
+				FABAA3311AD366FA004B60BC /* Frameworks */,
+				FABAA3321AD366FA004B60BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TableTranny;
+			productName = TableTranny;
+			productReference = FABAA3341AD366FA004B60BC /* TableTranny.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FABAA3481AD366FA004B60BC /* TableTrannyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FABAA3561AD366FA004B60BC /* Build configuration list for PBXNativeTarget "TableTrannyTests" */;
+			buildPhases = (
+				FABAA3451AD366FA004B60BC /* Sources */,
+				FABAA3461AD366FA004B60BC /* Frameworks */,
+				FABAA3471AD366FA004B60BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FABAA34B1AD366FA004B60BC /* PBXTargetDependency */,
+			);
+			name = TableTrannyTests;
+			productName = TableTrannyTests;
+			productReference = FABAA3491AD366FA004B60BC /* TableTrannyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FABAA32C1AD366FA004B60BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Zel Marko";
+				TargetAttributes = {
+					FABAA3331AD366FA004B60BC = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					FABAA3481AD366FA004B60BC = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = FABAA3331AD366FA004B60BC;
+					};
+				};
+			};
+			buildConfigurationList = FABAA32F1AD366FA004B60BC /* Build configuration list for PBXProject "TableTranny" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FABAA32B1AD366FA004B60BC;
+			productRefGroup = FABAA3351AD366FA004B60BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FABAA3331AD366FA004B60BC /* TableTranny */,
+				FABAA3481AD366FA004B60BC /* TableTrannyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FABAA3321AD366FA004B60BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FABAA33F1AD366FA004B60BC /* Main.storyboard in Resources */,
+				FABAA3441AD366FA004B60BC /* LaunchScreen.xib in Resources */,
+				FABAA3411AD366FA004B60BC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FABAA3471AD366FA004B60BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FABAA3301AD366FA004B60BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FABAA33C1AD366FA004B60BC /* ViewController.swift in Sources */,
+				FABAA33A1AD366FA004B60BC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FABAA3451AD366FA004B60BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FABAA3501AD366FA004B60BC /* TableTrannyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FABAA34B1AD366FA004B60BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FABAA3331AD366FA004B60BC /* TableTranny */;
+			targetProxy = FABAA34A1AD366FA004B60BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FABAA33D1AD366FA004B60BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FABAA33E1AD366FA004B60BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FABAA3421AD366FA004B60BC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FABAA3431AD366FA004B60BC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FABAA3511AD366FA004B60BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FABAA3521AD366FA004B60BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FABAA3541AD366FA004B60BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TableTranny/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FABAA3551AD366FA004B60BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TableTranny/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FABAA3571AD366FA004B60BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TableTrannyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TableTranny.app/TableTranny";
+			};
+			name = Debug;
+		};
+		FABAA3581AD366FA004B60BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TableTrannyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TableTranny.app/TableTranny";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FABAA32F1AD366FA004B60BC /* Build configuration list for PBXProject "TableTranny" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FABAA3511AD366FA004B60BC /* Debug */,
+				FABAA3521AD366FA004B60BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FABAA3531AD366FA004B60BC /* Build configuration list for PBXNativeTarget "TableTranny" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FABAA3541AD366FA004B60BC /* Debug */,
+				FABAA3551AD366FA004B60BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FABAA3561AD366FA004B60BC /* Build configuration list for PBXNativeTarget "TableTrannyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FABAA3571AD366FA004B60BC /* Debug */,
+				FABAA3581AD366FA004B60BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FABAA32C1AD366FA004B60BC /* Project object */;
+}
