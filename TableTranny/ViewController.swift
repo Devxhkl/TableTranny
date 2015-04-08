@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, EarthSectionDelegate {
     
     @IBOutlet weak var earthTable: UITableView!
     @IBOutlet weak var earthLabel: UILabel!
@@ -17,29 +17,93 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     var selectedCell: EarthTableCell?
     let transitionManager = TransitionManager()
+    var sectionInfoArray = [SectionInfo]()
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
         earthTable.contentInset = UIEdgeInsets(top: 70, left: 0, bottom: 0, right: 0)
         
+        if sectionInfoArray.count == 0 || sectionInfoArray.count != self.numberOfSectionsInTableView(earthTable) {
+            for continent in world {
+                let sectionInfo = SectionInfo()
+                sectionInfo.continent = continent
+                sectionInfo.isOpen = false
+                sectionInfoArray.append(sectionInfo)
+            }
+        }
+    }
+    
+    // MARK: - EarthTable
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return sectionInfoArray.count
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return world.count
+        let sectionInfo = sectionInfoArray[section]
+        
+        return sectionInfo.isOpen ? 1 : 0
+    }
+    
+    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let header = tableView.dequeueReusableCellWithIdentifier("EarthHeader") as EarthTableHeader
+        header.sectionDelegate = self
+        header.frame = CGRect(x: header.frame.origin.x, y: header.frame.origin.y, width: earthTable.bounds.width, height: header.bounds.height)
+        
+        let sectionInfo = sectionInfoArray[section]
+        sectionInfo.headerView = header
+        
+        header.continentInfoLabel.text = sectionInfo.continent.0
+        header.section = section
+        
+        let view = UIView(frame: header.frame)
+        view.addSubview(header)
+        
+        return view
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ContinentCell") as EarthTableCell
         
-        cell.continentNameLabel.text = world[indexPath.row].0
+        let sectionInfo = sectionInfoArray[indexPath.section]
+        
+        cell.continentNameLabel.text = "Countries: \(sectionInfo.continent.1.count)"
         
         return cell
+    }
+    
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 44
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 44
     }
+    
+    func openSection(sectionHeaderCell: EarthTableHeader, section: Int) {
+        let sectionInfo = sectionInfoArray[section]
+        sectionInfo.isOpen = true
+        
+        var indexPathsToInsert = [NSIndexPath]()
+        let indexPath = NSIndexPath(forRow: 0, inSection: section)
+        indexPathsToInsert.append(indexPath)
+        
+        earthTable.insertRowsAtIndexPaths(indexPathsToInsert, withRowAnimation: .Top)
+    }
+    
+    func closeSection(sectionHeaderCell: EarthTableHeader, section: Int) {
+        let sectionInfo = sectionInfoArray[section]
+        sectionInfo.isOpen = false
+        
+        var indexPathsToRemove = [NSIndexPath]()
+        let indexPath = NSIndexPath(forRow: 0, inSection: section)
+        indexPathsToRemove.append(indexPath)
+        
+        earthTable.deleteRowsAtIndexPaths(indexPathsToRemove, withRowAnimation: .Top)
+    }
+
+    // MARK: - ViewController
     
     override func viewDidLoad() {
         super.viewDidLoad()

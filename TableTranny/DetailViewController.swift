@@ -33,7 +33,7 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("CoutryCell") as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("CountryCell") as UITableViewCell
         
         cell.textLabel?.text = continent.1[indexPath.row]
         

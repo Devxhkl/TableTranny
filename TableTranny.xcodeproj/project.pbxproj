@@ -16,6 +16,8 @@
 		FABAA3621AD368EA004B60BC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABAA35C1AD368EA004B60BC /* DetailViewController.swift */; };
 		FABAA3631AD368EA004B60BC /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABAA35D1AD368EA004B60BC /* TransitionManager.swift */; };
 		FABAA3641AD368EA004B60BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABAA35E1AD368EA004B60BC /* Main.storyboard */; };
+		FAF7F46B1AD475CB00B8279C /* EarthTableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7F46A1AD475CB00B8279C /* EarthTableHeader.swift */; };
+		FAF7F46E1AD4764B00B8279C /* SectionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7F46D1AD4764B00B8279C /* SectionInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		FABAA35C1AD368EA004B60BC /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		FABAA35D1AD368EA004B60BC /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
 		FABAA35E1AD368EA004B60BC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FAF7F46A1AD475CB00B8279C /* EarthTableHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarthTableHeader.swift; sourceTree = "<group>"; };
+		FAF7F46D1AD4764B00B8279C /* SectionInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +90,7 @@
 				FABAA3591AD368EA004B60BC /* AppDelegate.swift */,
 				FABAA35A1AD368EA004B60BC /* ViewController.swift */,
 				FABAA35C1AD368EA004B60BC /* DetailViewController.swift */,
-				FABAA35B1AD368EA004B60BC /* EarthTableCell.swift */,
+				FAF7F46C1AD475D300B8279C /* EarthTable Classes */,
 				FABAA35D1AD368EA004B60BC /* TransitionManager.swift */,
 				FABAA35E1AD368EA004B60BC /* Main.storyboard */,
 				FABAA3401AD366FA004B60BC /* Images.xcassets */,
@@ -119,6 +123,16 @@
 				FABAA34E1AD366FA004B60BC /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAF7F46C1AD475D300B8279C /* EarthTable Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FABAA35B1AD368EA004B60BC /* EarthTableCell.swift */,
+				FAF7F46A1AD475CB00B8279C /* EarthTableHeader.swift */,
+				FAF7F46D1AD4764B00B8279C /* SectionInfo.swift */,
+			);
+			name = "EarthTable Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,7 +238,9 @@
 				FABAA3601AD368EA004B60BC /* ViewController.swift in Sources */,
 				FABAA3631AD368EA004B60BC /* TransitionManager.swift in Sources */,
 				FABAA3611AD368EA004B60BC /* EarthTableCell.swift in Sources */,
+				FAF7F46E1AD4764B00B8279C /* SectionInfo.swift in Sources */,
 				FABAA35F1AD368EA004B60BC /* AppDelegate.swift in Sources */,
+				FAF7F46B1AD475CB00B8279C /* EarthTableHeader.swift in Sources */,
 				FABAA3621AD368EA004B60BC /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
